@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Your Page Title</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        .mainImg {
+            height:200px;
+        }
+        .table-container {
+            display: flex;
+            justify-content: center;
+            width:100%;
+            padding:0;
+            margin:0;
+        }
+        
+
+    </style>
+</head>
+<body>
+    <div style=" position: fixed; background: white; box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px; width:100%;">
+        <h1 style="text-align:center; font-size:40px; margin: 20px;">Welcome to my website!</h1>
+        <hr style="color:grey; margin-bottom:20px" />
+    </div>
+    <div class="table-container">
+        <table class="container">
+            <tr>
+                <td><img class="mainImg" src="https://images.pexels.com/photos/416160/pexels-photo-416160.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="Cute Cat" /></td>
+                <td>Picture of cat provided by pexels under CC0 you can find the site at <a href="https://www.pexels.com/">click here</a></td>
+            </tr>
+            <tr>
+                <td>
+                    things to know about cats
+                    <ul>
+                        <li>cats have been domesticated up to 10,000 years ago</li>
+                        <li>purring isnt fully understood</li>
+                        <li>whiskers help them navigate</li>
+                        <li>cats have a diverse vocalisation system</li>
+                    </ul>
+                </td>
+                <td>please engage with the form below</td>
+
+            </tr>
+        </table>
+    </div>
+    <div class="formContainer">
+        <form>
+            <label>enter name</label>
+            <input type="text" />
+            <label>enter age</label>
+            <input type="number" max="100" min="0" />
+            <label>enter favourite colour</label>
+            <input type="color" />
+            <label>favourite car model</label>
+            <select>
+                <option value="volvo">volvo</option>
+                <option value="ford">ford</option>
+                <option value="ferrari">ferrari</option>
+                <option value="tesla">tesla</option>
+                <option value="toyota">toyota</option>
+            </select>
+            <input class="buttons" type="submit" />
+            <input class="buttons" type="reset">
+
+        </form>
+    </div>
+</body>
+</html>
